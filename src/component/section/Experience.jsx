@@ -23,13 +23,15 @@ const Experience = () => {
     <>
       <h1>Industrial Experience</h1>
 
-      <input
-        type="range"
-        className="slider"
-        onChange={(e) => sliderChanged(e)}
-      />
-      <div style={{ display: "flex" }}>
-        <div ref={firstSlider} className="card left">
+      <div
+        style={{
+          display: "flex",
+          width: "100%",
+          gap: "2rem",
+          marginTop: "2rem",
+        }}
+      >
+        <div ref={firstSlider} className="card">
           <div className="cardtitle">Tata Consultancy Services</div>
           <div className="cardsubtitle">Gandhinagar, India</div>
           <div className="cardsubsubtitle ">OCT-2020 to DEC-2021</div>
@@ -74,7 +76,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div ref={secondSlider} className="card right">
+        <div ref={secondSlider} className="card">
           <div className="cardtitle">Conestoga College (CARI)</div>
           <div className="cardsubtitle">Cambridge, Canada</div>
           <div className="cardsubsubtitle ">May-2022 to Current</div>

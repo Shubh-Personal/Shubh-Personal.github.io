@@ -10,13 +10,11 @@
 }
 
 .card {
-  display: block;
   padding: 3rem;
   background: #000;
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  max-height: 68vh;
+  flex: 1;
+  flex-direction: row;
+  border-radius: 2rem;
 }
 
 .card-section {
@@ -53,36 +51,4 @@
 .card-section-title {
   display: flex;
   font-size: 2rem;
-}
-
-.left {
-  left: 0px;
-  z-index: 1;
-}
-.right {
-  right: 0px;
-  z-index: 2;
-}
-.slider {
-  margin: 2px auto;
-  -webkit-appearance: none;
-  width: 100%;
-  background-color: white;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 25px;
-  height: 25px;
-  background: black;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #04aa6d;
-
-  cursor: pointer;
 }
