@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import Header from "./component/Header";
-import About from "./component/section/About";
+import Experience from "./component/section/Experience";
 import Home from "./component/section/Home";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Home />
       </div>
       <div className="mySection" id="experienceSection">
-        <About />
+        <Experience />
       </div>
       <div className="mySection" id="skillsSection">
         Skills

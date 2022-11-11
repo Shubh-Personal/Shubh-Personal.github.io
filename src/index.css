@@ -36,8 +36,9 @@ body {
 }
 
 .link:hover {
-  color: rgba(50, 117, 53, 1);
+  color: var(--bgcolor);
   background-color: var(--secondary);
+  border-radius: 10px 30px;
 }
 
 .link.active {
