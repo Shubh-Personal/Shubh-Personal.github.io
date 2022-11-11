@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./component/Header";
 import Experience from "./component/section/Experience";
 import Home from "./component/section/Home";
+import ParallelSections from "./component/section/subsection/ParallelSections";
 
 function App() {
   useEffect(() => {
@@ -19,7 +20,7 @@ function App() {
         <Home />
       </div>
       <div className="mySection" id="experienceSection">
-        <Experience />
+        <ParallelSections LeftEle={Experience} RightEle={Home} />
       </div>
       <div className="mySection" id="skillsSection">
         Skills
