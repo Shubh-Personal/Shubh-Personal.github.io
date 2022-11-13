@@ -1,3 +1,6 @@
+.white {
+  background-color: white;
+}
 .cardtitle {
   font-size: 4rem;
   align-self: center;
@@ -12,9 +15,7 @@
 .card {
   padding: 3rem;
   background: #000;
-  flex: 1;
   flex-direction: row;
-  border-radius: 2rem;
 }
 
 .card-section {
@@ -51,4 +52,7 @@
 .card-section-title {
   display: flex;
   font-size: 2rem;
+}
+.invert > * {
+  color: black;
 }

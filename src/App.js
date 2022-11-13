@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import "./App.css";
 import Header from "./component/Header";
+import Contact from "./component/section/Contact";
 import Experience from "./component/section/Experience";
 import Home from "./component/section/Home";
+import Project from "./component/section/Project";
 import ParallelSections from "./component/section/subsection/ParallelSections";
 
 function App() {
@@ -20,13 +22,16 @@ function App() {
         <Home />
       </div>
       <div className="mySection" id="experienceSection">
-        <ParallelSections LeftEle={Experience} RightEle={Home} />
+        <Experience />
       </div>
       <div className="mySection" id="skillsSection">
         Skills
       </div>
       <div className="mySection" id="projectsSection">
-        Projects
+        <Project />
+      </div>
+      <div className="mySection" id="contactSection">
+        <Contact />
       </div>
     </div>
   );

@@ -130,26 +130,26 @@ body {
 
 @keyframes ripple {
   0% {
-    outline: 3px solid rgba(55, 110, 57, 0);
+    outline: 3px solid rgba(0, 117, 255, 0);
   }
 
   20% {
-    outline: 5px solid rgba(55, 110, 57, 0.2);
+    outline: 5px solid rgba(0, 117, 255, 0.2);
   }
 
   40% {
-    outline: 7px solid rgba(50, 117, 53, 0.4);
+    outline: 7px solid rgba(0, 117, 255, 0.4);
   }
 
   60% {
-    outline: 9px solid rgba(50, 117, 53, 0.6);
+    outline: 9px solid rgba(0, 117, 255, 0.6);
   }
 
   80% {
-    outline: 11px solid rgba(50, 117, 53, 0.8);
+    outline: 11px solid rgba(0, 117, 255, 0.8);
   }
 
   100% {
-    outline: 13px solid rgba(50, 117, 53, 1);
+    outline: 13px solid rgba(0, 117, 255, 1);
   }
 }

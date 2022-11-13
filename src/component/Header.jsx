@@ -9,6 +9,7 @@ function Header() {
         <NavLink>Experience</NavLink>
         <NavLink>Skills</NavLink>
         <NavLink>Projects</NavLink>
+        <NavLink>Contact</NavLink>
         <a
           href="http://www.linkedin.com/in/shubhpatel479"
           target={"_new"}

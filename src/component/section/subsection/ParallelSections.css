@@ -5,6 +5,7 @@
   margin: 0px auto;
   position: relative;
   overflow: hidden;
+  margin-top: 1rem;
 }
 
 .card {
@@ -25,8 +26,9 @@
   right: 0px;
   overflow: hidden;
   height: 80vh;
-  border-left: 2px solid white;
-  width: 50%;
+  border-left: 3px solid white;
+  width: 30%;
+  transition: 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .slider {
   position: absolute;
@@ -37,5 +39,25 @@
   z-index: 3;
 }
 .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
   scale: 2;
+  background-color: #0075ff;
+  background-position: center center;
+  background-position: center;
+  height: 15px;
+  width: 15px;
+  border: 2px solid;
+  border-radius: 50px;
 }
+
+.slider::-moz-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.invert {
+  background-color: white;
+}
+
+

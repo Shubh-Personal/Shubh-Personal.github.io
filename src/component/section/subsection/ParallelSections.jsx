@@ -7,7 +7,6 @@ const ParallelSections = ({ LeftEle, RightEle }) => {
   const sliderChanged = (value) => {
     right.current.style.width = `${100 - value}%`;
   };
-  useEffect(() => {}, []);
 
   return (
     <>
@@ -18,7 +17,14 @@ const ParallelSections = ({ LeftEle, RightEle }) => {
         <input
           type="range"
           className="slider"
-          onChange={(e) => sliderChanged(e.target.value)}
+          defaultValue={70}
+          onChange={(e) => {
+            right.current.style.borderColor = "#0075ff";
+            sliderChanged(e.target.value);
+          }}
+          onMouseUp={(e) => {
+            right.current.style.borderColor = "white";
+          }}
         />
         <div ref={right} className="sliderdiv">
           <div className="card">
