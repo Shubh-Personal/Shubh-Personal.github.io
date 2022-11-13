@@ -1,0 +1,44 @@
+.input-wrap {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  gap: 0.5rem;
+}
+.input-wrap > label {
+  font-size: large;
+}
+.input-wrap > input,
+.input-wrap > textarea {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: black;
+  outline: none;
+  padding: 2rem;
+  border: none;
+  font-size: medium;
+  border-radius: 2rem;
+}
+
+.submit {
+  border: none;
+  padding: 2rem;
+  width: 10%;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+}
+.input-wrap > input:focus,
+.input-wrap > textarea:focus {
+  outline: 5px solid #0074fd;
+}
+.submit:hover {
+  outline: 5px solid #0074fd;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
