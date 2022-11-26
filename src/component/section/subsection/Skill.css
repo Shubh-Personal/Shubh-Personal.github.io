@@ -1,0 +1,33 @@
+.containera {
+  height: 2rem;
+}
+
+.capsule {
+  animation: ltranimation 3s forwards 1;
+  display: inline-block;
+  height: 2rem;
+  border-top: 3px solid rgb(10, 102, 194);
+  border-bottom: 3px solid rgb(10, 102, 194);
+  width: 10%;
+}
+
+.one {
+  border-radius: 20px 0 0 20px;
+}
+
+.five {
+  border-radius: 0px 20px 20px 0px;
+  border-right: 3px solid rgb(10, 102, 194);
+}
+
+.filled {
+  background-color: rgb(10, 102, 194);
+}
+
+@keyframes ltranimation {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+  }
+}

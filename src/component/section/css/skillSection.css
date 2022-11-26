@@ -1,0 +1,5 @@
+.skillContainer {
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+}

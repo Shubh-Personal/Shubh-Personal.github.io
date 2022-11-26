@@ -5,6 +5,7 @@ import Contact from "./component/section/Contact";
 import Experience from "./component/section/Experience";
 import Home from "./component/section/Home";
 import Project from "./component/section/Project";
+import SkillSection from "./component/section/SkillSection";
 import ParallelSections from "./component/section/subsection/ParallelSections";
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         <Experience />
       </div>
       <div className="mySection" id="skillsSection">
-        Skills
+        <SkillSection />
       </div>
       <div className="mySection" id="projectsSection">
         <Project />
