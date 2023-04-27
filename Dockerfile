@@ -1,9 +1,9 @@
-FROM halverneus/static-file-server
+FROM nginx:latest
 
 WORKDIR /app
 
-COPY /build/. .
+COPY /build/. /usr/share/nginx/html
 
 EXPOSE 80
 
-CMD ["PORT=80","FOLDER=.","./serve"]
+CMD ["nginx", "-g", "daemon off;"]
