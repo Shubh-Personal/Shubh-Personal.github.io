@@ -16,6 +16,7 @@
   padding: 3rem;
   background: #000;
   flex-direction: row;
+  scroll-y:auto;
 }
 
 .card-section {
