@@ -5,12 +5,12 @@ import ParallelSections from "./subsection/ParallelSections";
 
 const Experience = () => {
   const tcsExp = () => (
-    <div className="card">
+    <div className="card bgdark">
       <div className="cardtitle">Tata Consultancy Services (TCS)</div>
       <div className="cardsubtitle">Gandhinagar, India</div>
-      <div className="cardsubsubtitle ">OCT-2020 to DEC-2021</div>
+      <div className="cardsubsubtitle ">Oct 2020 to Dec 2021</div>
       <div className="card-section">
-        <div className="card-section-title">Tasks</div>
+        <div className="card-section-title text-center"><u>Tasks</u></div>
         <ul className="card-section-list">
           <li>
             Worked as a Full-Stack developer and developed frontend with
@@ -38,26 +38,17 @@ const Experience = () => {
           <li>AngularJS</li>
         </ul>
       </div>
-      <div className="card-section">
-        <div className="card-section-title">Tools</div>
-        <ul className="card-section-list-row">
-          <li>VScode</li>
-          <li>Eclipse</li>
-          <li>SQuirreL SQL Client</li>
-          <li>Postman</li>
-          <li></li>
-        </ul>
-      </div>
+
     </div>
   );
 
   const conestogaExp = () => (
-    <div className="card invert">
+    <div className="card  bgwhite invert">
       <div className="cardtitle">Conestoga College (CARI)</div>
       <div className="cardsubtitle">Cambridge, Canada</div>
-      <div className="cardsubsubtitle ">May-2022 to Current</div>
+      <div className="cardsubsubtitle ">May 2022 to Dec 2022</div>
       <div className="card-section invert">
-        <div className="card-section-title invert">Tasks</div>
+        <div className="card-section-title invert"><u>Tasks</u></div>
         <ul className="card-section-list invert">
           <li>
             Built a web application for interactivity multi-user video room and
@@ -90,16 +81,6 @@ const Experience = () => {
           <li>SocketJS</li>
           <li>WebRTC</li>
           <li>PeerJS</li>
-        </ul>
-      </div>
-      <div className="card-section invert">
-        <div className="card-section-title">Tools</div>
-        <ul className="card-section-list-row invert">
-          <li>VScode</li>
-          <li>Mongodb Atlas</li>
-          <li>Thunder Client</li>
-          <li>Postman</li>
-          <li></li>
         </ul>
       </div>
     </div>

@@ -5,11 +5,13 @@ function Header() {
     <div className="d-flex header">
       {/* <h2 className="title">SHUBH PATEL</h2> */}
       <ul className="link-list d-flex justify-content-center align-items-center ">
+
         <NavLink>Home</NavLink>
         <NavLink>Experience</NavLink>
         <NavLink>Skills</NavLink>
         <NavLink>Projects</NavLink>
         <NavLink>Contact</NavLink>
+
         <a
           href="http://www.linkedin.com/in/shubhpatel479"
           target={"_new"}

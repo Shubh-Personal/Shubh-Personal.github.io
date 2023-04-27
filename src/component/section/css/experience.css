@@ -1,32 +1,43 @@
 .white {
   background-color: white;
 }
+
 .cardtitle {
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center;
 }
 
 .cardsubtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
-  align-self: center;
 }
 
 .card {
-  padding: 3rem;
-  background: #000;
+  padding: 0.8rem;
   flex-direction: row;
-  scroll-y:auto;
+}
+
+.bgwhite {
+  background-color: #fff;
+}
+
+.bgdark {
+  background-color: #000;
 }
 
 .card-section {
   margin-top: 2rem;
   margin-left: 2rem;
+  overflow-y: auto;
+
 }
+
 .cardsubsubtitle {
   font-size: 1.3rem;
   align-self: flex-start;
+
 }
+
 .card-section-list {
   display: flex;
   margin-top: 1rem;
@@ -41,19 +52,24 @@
   gap: 2rem;
 }
 
-.card-section-list-row > li {
+.card-section-list-row>li {
   font-size: 1.2rem;
   align-self: flex-start;
 }
-.card-section-list > li {
+
+.card-section-list>li {
   margin: 0.3rem 0px;
   font-size: 1.2rem;
   align-self: flex-start;
 }
+
 .card-section-title {
   display: flex;
   font-size: 2rem;
+  text-decoration: underline;
 }
-.invert > * {
+
+
+.invert>* {
   color: black;
 }

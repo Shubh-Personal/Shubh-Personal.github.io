@@ -26,21 +26,21 @@ const Contact = () => {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
+    <form className="contact-form " onSubmit={sendEmail}>
       {process.env.SERVICE_ID}
       <h1>Contact Me</h1>
       <input type="hidden" name="contact_number" />
       <div className="input-wrap">
         <label>Name</label>
-        <input type="text" name="from_name" />
+        <input placeholder="John Doe" type="text" name="from_name" />
       </div>
       <div className="input-wrap">
         <label>Your Email</label>
-        <input type="email" className="inp" name="from_email" />
+        <input placeholder="example@gmail.com" type="email" className="inp" name="from_email" />
       </div>
       <div className="input-wrap">
         <label>Message</label>
-        <textarea className="inp" name="html_message" />
+        <textarea placeholder="Enter your message..." className="inp" rows="5" name="html_message" />
       </div>
       <input className="submit" type="submit" value="Send" />
     </form>

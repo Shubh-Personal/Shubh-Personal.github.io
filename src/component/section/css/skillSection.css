@@ -1,5 +1,12 @@
 .skillContainer {
   display: flex;
   gap: 1.4rem;
+  width: 100%;
+}
+
+.skillCol {
+  display: flex;
+  gap: 1.4rem;
   flex-direction: column;
+  flex-grow: 1;
 }

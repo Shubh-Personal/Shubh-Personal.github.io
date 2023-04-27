@@ -6,11 +6,9 @@ import Experience from "./component/section/Experience";
 import Home from "./component/section/Home";
 import Project from "./component/section/Project";
 import SkillSection from "./component/section/SkillSection";
-import ParallelSections from "./component/section/subsection/ParallelSections";
 
 function App() {
   useEffect(() => {
-    console.log(window.myCustomObj);
   }, [window.myCustomObj]);
 
   return (

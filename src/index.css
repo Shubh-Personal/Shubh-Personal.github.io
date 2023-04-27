@@ -25,6 +25,12 @@ body {
   padding: 2rem;
 }
 
+#projectsSection,
+#skillsSection,
+#contactSection {
+  padding: 5px 2rem;
+}
+
 .title {
   margin-left: 2rem;
   color: var(--primary);
@@ -33,14 +39,19 @@ body {
 .link {
   color: var(--secondary);
   cursor: pointer;
-  padding: 2rem;
   font-size: larger;
+  padding: 2rem;
 }
 
 .link:hover {
-  color: var(--bgcolor);
   background-color: var(--secondary);
-  border-radius: 10px 30px;
+  color: var(--bgcolor);
+}
+
+.link:hover {
+  transition: .3s;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 2px 2px #000;
 }
 
 .link.active {
@@ -139,26 +150,26 @@ body {
 
 @keyframes ripple {
   0% {
-    outline: 3px solid rgba(0, 117, 255, 0);
+    outline: 5px solid rgba(0, 119, 255, 0.1);
   }
 
   20% {
-    outline: 5px solid rgba(0, 117, 255, 0.2);
+    outline: 7px solid rgba(0, 117, 255, 0.2);
   }
 
   40% {
-    outline: 7px solid rgba(0, 117, 255, 0.4);
+    outline: 9px solid rgba(0, 117, 255, 0.4);
   }
 
   60% {
-    outline: 9px solid rgba(0, 117, 255, 0.6);
+    outline: 11px solid rgba(0, 117, 255, 0.6);
   }
 
   80% {
-    outline: 11px solid rgba(0, 117, 255, 0.8);
+    outline: 13px solid rgba(0, 117, 255, 0.8);
   }
 
   100% {
-    outline: 13px solid rgba(0, 117, 255, 1);
+    outline: 15px solid rgba(0, 117, 255, 1);
   }
 }
