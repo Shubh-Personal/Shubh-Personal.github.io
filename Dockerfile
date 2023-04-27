@@ -7,6 +7,6 @@ WORKDIR /app
 
 COPY /build .
 
-EXPOSE 80 8080
+EXPOSE 80
 
 CMD ["./serve"]
