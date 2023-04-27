@@ -5,7 +5,7 @@ ENV cors=false
 
 WORKDIR /app
 
-COPY /build .
+COPY /build/. .
 
 EXPOSE 80
 
