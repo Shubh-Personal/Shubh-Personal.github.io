@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+  
+
+    stages {
+        stage('Build') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/Shubh-Personal/my-portfolio.git'
+
+                sh "rm -rf node_modules package-lock.json && npm install"
+              
+                
+                sh "CI='' npm run build"
+                
+            }
+
+        }
+        stage('containerizing'){
+            steps{
+                sh "docker build -t shubhpatel14/my-portfolio ."
+                
+                withCredentials([usernamePassword(credentialsId: '3a756b61-b678-49a4-9955-87297e4a89c9', passwordVariable: 'pwd', usernameVariable: 'uname')]) {
+                    
+                    sh "docker login -u ${uname} -p ${pwd}"
+                    
+                    sh "docker push shubhpatel14/my-portfolio:latest"
+                    
+                }
+            }
+        }
+        stage('deploy to docker')
+        {
+            steps{
+                script{
+                    res = sh(script: "docker ps -aq | wc -l", returnStdout: true).trim()
+                    if(res != 0)
+                    {
+                        sh 'docker rm -f $(docker ps -aq)'
+                    }
+                }
+                sh 'docker pull shubhpatel14/my-portfolio:latest'
+                sh 'docker run -dp 80:80 shubhpatel14/my-portfolio:latest'
+            }
+        }
+    }
+}
