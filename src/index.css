@@ -4,6 +4,7 @@
   --secondary: #ffffff;
   --ternary: #09c5c5;
 }
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -19,7 +20,7 @@ body {
 }
 
 .mySection {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   padding: 2rem;
 }
@@ -28,6 +29,7 @@ body {
   margin-left: 2rem;
   color: var(--primary);
 }
+
 .link {
   color: var(--secondary);
   cursor: pointer;
@@ -58,10 +60,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .d-flex-only {
   display: flex;
   flex-direction: column;
 }
+
 .link-list {
   list-style: none;
   flex: 1;
@@ -107,19 +111,24 @@ body {
 .justify-content-center {
   justify-content: center;
 }
+
 .align-items-center {
   align-items: center;
 }
+
 .align-items-start {
   align-items: start;
 }
+
 .bg-white {
   background-color: white;
 }
+
 .special-font {
   font-size: 6rem;
   font-family: monospace;
 }
+
 .justify-content-around {
   justify-content: space-around;
 }
