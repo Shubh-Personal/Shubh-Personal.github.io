@@ -28,11 +28,11 @@ const Contact = () => {
   return (
     <form className="contact-form " onSubmit={sendEmail}>
       {process.env.SERVICE_ID}
-      <h1>Contact Me</h1>
+      <h1>Contact</h1>
       <input type="hidden" name="contact_number" />
       <div className="input-wrap">
         <label>Name</label>
-        <input placeholder="John Doe" type="text" name="from_name" />
+        <input placeholder="Alex Jon" type="text" name="from_name" />
       </div>
       <div className="input-wrap">
         <label>Your Email</label>

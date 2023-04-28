@@ -23,6 +23,7 @@ body {
   height: 100vh;
   width: 100%;
   padding: 2rem;
+  letter-spacing: ".3rem",
 }
 
 #projectsSection,
@@ -34,6 +35,7 @@ body {
 .title {
   margin-left: 2rem;
   color: var(--primary);
+  letter-spacing: ".3rem",
 }
 
 .link {
@@ -41,6 +43,7 @@ body {
   cursor: pointer;
   font-size: larger;
   padding: 2rem;
+  letter-spacing: ".3rem",
 }
 
 .link:hover {
