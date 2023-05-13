@@ -19,7 +19,7 @@ const ProjectCard = ({ name, url, description, imgUrl }) => {
         >
           {name}
         </h1>
-        <img height="180px" src={imgUrl} />
+        <img className="project-img" height="180px" src={imgUrl} />
         <p className="project-desc">
           <h3 style={{ marginBottom: ".3rem", textAlign: "center" }}>
             Description

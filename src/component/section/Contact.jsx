@@ -29,8 +29,9 @@ const Contact = () => {
     <form className="contact-form " onSubmit={sendEmail}>
       {process.env.SERVICE_ID}
       <h1>Contact</h1>
+      <p style={{ textAlign: "start", color: "var(--secondary)" }}>Do you want to contact me? Please fill your details and I will response you as soon as I receive you message. Thank you for your time!</p>
       <input type="hidden" name="contact_number" />
-      <div className="input-wrap">
+      <div className="input-wrap mt-3">
         <label>Name</label>
         <input placeholder="Alex Jon" type="text" name="from_name" />
       </div>
@@ -43,7 +44,7 @@ const Contact = () => {
         <textarea placeholder="Enter your message..." className="inp" rows="5" name="html_message" />
       </div>
       <input className="submit" type="submit" value="Send" />
-    </form>
+    </form >
   );
 };
 

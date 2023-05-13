@@ -1,0 +1,27 @@
+.col-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.row-flex {
+    display: flex;
+    gap: 2rem
+}
+
+@media only screen and (max-width:768px) {
+    .col-flex {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        overflow-y: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

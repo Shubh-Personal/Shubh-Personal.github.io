@@ -1,4 +1,26 @@
 .special-font {
   font-size: 6rem;
   font-family: monospace;
-    }
+  letter-spacing: 2px;
+}
+
+.resume {
+  background-color: coral;
+  padding: 1rem 4rem;
+  font-size: larger;
+  border: none;
+  box-shadow: 3px 3px green;
+  text-decoration: none;
+}
+
+.resume:hover {
+  box-shadow: none;
+  transform: translateX(3px) translateY(3px);
+}
+
+@media only screen and (max-width: 768px) {
+  .special-font {
+    font-size: 2rem;
+    font-family: monospace;
+  }
+}

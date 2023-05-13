@@ -10,7 +10,7 @@ const ParallelSections = ({ LeftEle, RightEle }) => {
 
   return (
     <>
-      <div className="container">
+      <div className="container-project">
         <div className="card">
           <LeftEle className="leftEle ele"></LeftEle>
         </div>

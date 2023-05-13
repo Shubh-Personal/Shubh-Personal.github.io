@@ -2,7 +2,7 @@ import React from "react";
 import "./Skill.css";
 const Skill = ({ rating, name }) => {
   return (
-    <>
+    <div className="skill-div">
       <h2>{name}</h2>
       <div className="containera">
         <div
@@ -21,7 +21,7 @@ const Skill = ({ rating, name }) => {
           className={rating >= 5 ? "capsule five filled" : "capsule five"}
         ></div>
       </div>
-    </>
+    </div>
   );
 };
 

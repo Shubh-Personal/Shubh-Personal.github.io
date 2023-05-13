@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function Header() {
   return (
-    <div className="d-flex header">
+    <div className="d-flex header hide">
       {/* <h2 className="title">SHUBH PATEL</h2> */}
       <ul className="link-list d-flex justify-content-center align-items-center ">
 

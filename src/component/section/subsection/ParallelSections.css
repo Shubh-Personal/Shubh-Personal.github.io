@@ -1,4 +1,4 @@
-.container {
+.container-project {
   width: 80vw;
   height: 80vh;
   display: flex;
@@ -30,6 +30,7 @@
   width: 30%;
   transition: 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .slider {
   position: absolute;
   width: 100%;
@@ -38,6 +39,7 @@
   background-color: transparent;
   z-index: 3;
 }
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   scale: 2;
@@ -56,8 +58,7 @@
   width: 25px;
   cursor: pointer;
 }
+
 .invert {
   background-color: white;
 }
-
-

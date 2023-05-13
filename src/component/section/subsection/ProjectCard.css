@@ -14,6 +14,7 @@
   visibility: visible;
   transform: translateY(0px) scale(1);
 }
+
 .project-desc {
   text-align: left;
   opacity: "0";
@@ -25,4 +26,15 @@
   padding: 0.5rem;
   opacity: 0.8;
   transform: translateY(20rem) scale(1);
+}
+
+@media only screen and (max-width:768px) {
+  .project-card {
+    display: block;
+    width: 100%;
+  }
+
+  .project-img {
+    width: 100%;
+  }
 }

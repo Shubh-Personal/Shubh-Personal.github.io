@@ -1,12 +1,12 @@
 import React from "react";
 import ProjectCard from "./subsection/ProjectCard";
-
+import "./css/project.css"
 const Project = () => {
   return (
     <>
       <h1>Projects</h1>
-      <div className="container mt-5" style={{ display: "flex", gap: "1rem", flexDirection: "column" }}>
-        <div style={{ display: "flex", gap: "2rem" }}>
+      <div className="col-flex">
+        <div className="row-flex">
           <ProjectCard
             imgUrl="https://reviewed-com-res.cloudinary.com/image/fetch/s--bzwSt_ad--/b_white,c_fill,cs_srgb,f_auto,fl_progressive.strip_profile,g_auto,h_547,q_auto,w_972/https://reviewed-production.s3.amazonaws.com/1646825326000/francesco_zorzi_Reviewed_Kids_Chores_0_hero_a.jpg"
             name="Tasker"
@@ -26,7 +26,7 @@ const Project = () => {
             url="#"
           />
         </div>
-        <div style={{ display: "flex", gap: "2rem" }}>
+        <div className="row-flex">
           <ProjectCard
             imgUrl="https://img.freepik.com/free-vector/man-woman-teamwork-strategy-business-concept-people-moving-chess-figures-as-metaphor-partnership-creative-solution-plan_575670-256.jpg?w=740&t=st=1682643280~exp=1682643880~hmac=84d15004999134184ebb90607320f8e23596eae1ab17c51d8e1758ffe975d134"
             name="Chess"

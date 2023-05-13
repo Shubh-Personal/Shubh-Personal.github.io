@@ -3,7 +3,7 @@
 }
 
 .capsule {
-  animation: ltranimation 3s forwards 1;
+  /* animation: ltranimation 3s forwards infinit; */
   display: inline-block;
   height: 2rem;
   border-top: 3px solid rgb(10, 102, 194);
@@ -28,6 +28,29 @@
   0% {
     background-color: transparent;
   }
+
+  50% {
+    background-color: yellow;
+  }
+
   100% {
+    background-color: rgb(10, 102, 194);
+    ;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .containera {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .capsule {
+    /* animation: ltranimation 3s forwards infinit; */
+    display: inline-block;
+    height: 2rem;
+    border-top: 3px solid rgb(10, 102, 194);
+    border-bottom: 3px solid rgb(10, 102, 194);
+    width: 20%;
   }
 }
