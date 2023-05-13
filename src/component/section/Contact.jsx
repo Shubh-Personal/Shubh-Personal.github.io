@@ -29,9 +29,9 @@ const Contact = () => {
     <form className="contact-form " onSubmit={sendEmail}>
       {process.env.SERVICE_ID}
       <h1>Contact</h1>
-      <p style={{ textAlign: "left", fontStyle: "italic", color: "var(--secondary)", borderLeft: "10px solid var(--primary)", padding: "1rem 2rem"}}>Do you want to contact me? <br/>Please fill your details and I will response you as soon as I receive you message.<br/>Thank you for your time!</p>
+      <p style={{ textAlign: "left", fontStyle: "italic", color: "var(--secondary)", borderLeft: "10px solid var(--primary)", padding: "1rem 1.5rem"}}>Do you want to contact me? <br/>Please fill your details and I will response you as soon as I receive you message.<br/>Thank you for your time!</p>
       <input type="hidden" name="contact_number" />
-      <div className="input-wrap mt-3">
+      <div className="input-wrap mt-5">
         <label>Name</label>
         <input placeholder="Alex Jon" type="text" name="from_name" />
       </div>
